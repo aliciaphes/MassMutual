@@ -1,0 +1,127 @@
+// Variables
+$mm-sample-font-sans-serif: Helvetica, Arial, sans-serif;
+$mm-sample-font-serif:      Georgia, "Times New Roman", Times, serif;
+
+
+html {
+  font-size: 62.5%; // Why do we set the font size to this value at the html level? AP: I'm not sure but perhaps to ensure that the size of the font is proportionate regardless of the size of the browser
+  position: relative;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+  background-color: #f3f3f3;
+}
+
+header {
+  // Nav work is already completed, no need to touch this (cue MC Hammer)
+  height: 6rem;
+  background-color: #002f6c;
+  box-sizing: border-box;
+  padding: 2.5rem 0;
+
+  .container {
+    margin-top: -.6rem;
+  }
+
+  img {
+    width: 16rem;
+  }
+}
+
+.container { margin-top: 5rem; }
+
+
+// Typography and button styles - included are some placeholders for styling.
+// Keep in mind, a component may use one placeholder for a title / etc now but it
+// may change in 6 months and we want to be able to swap via only CSS changes
+h1, h2, %h2 {
+  font-family: $mm-sample-font-serif;
+  color: #000;
+}
+
+p, h1, h2, %h2 { margin: 0 0 2rem 0; }
+h1      { font-size: 4rem; }
+h2, %h2 { font-size: 3rem; }
+p       { font-family: $mm-sample-font-sans-serif; font-size: 1.4rem; }
+
+a {
+  color: #002f6c;
+  font-weight: bold;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+
+.mm-title {
+  @extend %h2;
+}
+
+
+%eyebrow {
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  line-height: 1.2rem;
+  margin-bottom: 2.4rem;
+}
+
+%subtext {
+  font-size: 1.2rem;
+}
+
+.mm-category {
+  @extend %eyebrow;
+  @extend %subtext;
+  padding-top: 1.3rem;
+}
+
+%btn-primary {
+  color: #000;
+  font-size: 1rem;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 1.2rem 4rem;
+  background-color: yellow;
+  border: 0;
+  border-radius: 0;
+}
+
+.mm-button {
+  @extend %btn-primary;
+}
+
+.mm-legal {
+  font-size: 1.1rem;
+}
+
+.mm-footer {
+  padding: 0 1rem 0 1rem;
+  margin: auto 0 2rem 0;
+}
+
+.mm-column {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.mm-card {
+  // Feel free to make any comments to explain your thinking
+
+  padding: 0;
+  margin: 0 1rem 2.4rem 1rem;
+
+  .image {
+    // Including some base styles so this shows up in the basic page, feel free to change these
+    height: inherit;
+    min-height: 15rem;
+    width: 100%;
+  }
+
+  .content {
+    padding: 0 1rem 0 1rem;
+  }
+}
