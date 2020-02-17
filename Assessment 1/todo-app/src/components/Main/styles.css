@@ -1,0 +1,28 @@
+textarea {
+  resize: none;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.red {
+  color: red;
+  margin-left: 10px;
+}
+.red:hover {
+  cursor: pointer;
+}
+
+#addButton {
+  padding: 10px 20px;
+}
+
+.todo-checkbox {
+  margin: 10px;
+}
+
+.todo-list-group {
+  display: flex;
+  flex-direction: column;
+}

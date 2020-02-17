@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.center {
+  align-self: center;
+}
+
+.flow-right {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container-todo {
+  max-width: 550px;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+
+.with-margin-top {
+  margin-top: 1rem;
+}
+
+.with-margin-bottom {
+  margin-bottom: 1rem;
+}
